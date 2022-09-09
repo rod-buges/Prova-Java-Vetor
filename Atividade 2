@@ -1,0 +1,14 @@
+public class prova2 {
+    public static void main(String[] args) {
+        double salario = 1000;
+        int ano = 1996;
+        int atual = 2022;
+        int diferenca = atual-ano;
+        double percentual = 1.5;
+        for(int i =1; i<=diferenca; i++){
+            salario=salario+(salario*percentual)/100;
+            percentual*=2;
+        }
+        System.out.println("O salario atual é de: R$"+salario);
+    }
+}
